@@ -9,14 +9,13 @@ exported to a calendar grid format, which may be pasted into the associated Exce
 from __future__ import division     # Without this, rounding errors occur in python 2.7, but apparently not in 3.4
 import numpy as np
 import pandas as pd
-import tkinter as _tkinter
 from scipy.cluster.hierarchy import dendrogram, linkage, is_monotonic    # For cluster analysis
 from scipy.cluster.hierarchy import fcluster   # For cluster membership
 from matplotlib import pyplot as plt
 import math
 
 # import raw temporal data
-raw_data = pd.read_csv('N2EX_hourly_2017_2019_calendar_year.csv', encoding='ISO-8859-1')
+raw_data = pd.read_csv('N2EX_hourly_2017_2019_calendar_year_all_days_have_24h.csv', encoding='ISO-8859-1')
 raw_price = raw_data.ix[:, 'price_sterling']
 # Tidy up price data (remove commas from as-downloaded CSV)
 price = []
