@@ -1,5 +1,6 @@
 ﻿# coding: utf-8
-"""This script performs a cluster analysis on day ahead price profiles"""
+"""This script performs a hierrachical cluster analysis on day ahead price profiles. The cluster membership data are 
+exported to a calendar grid format, which may be pasted into the associated Excel file for data visualisation."""
 ########################################################################################################################
 # Import required tools
 ########################################################################################################################
